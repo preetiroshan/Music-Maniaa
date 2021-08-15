@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+#root {
+  --button-color: #d0d6b5;
+  --button-selected: #75b9be;
+  --suggestion-background: #e8ebdc;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.genre {
+  display: table-cell;
+  margin: 5px;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 0.2rem;
+  padding: 5px;
+  min-width: 80px;
+}
+
+.selected {
+  background-color: var(--button-selected) !important;
+}
+
+.suggestion-container {
+  background-color: var(--suggestion-background);
+  padding: 3rem;
+  margin: auto;
+  margin-top: 2rem;
+  min-height: 30vh;
+}
+
+.song-row {
+  background-color: var(--button-color);
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.clear {
+  background-color: white;
+  border: 2px solid var(--button-selected);
+  border-radius: 0.2rem;
+  margin-top: 0.8rem;
+}
+
+.clear:hover {
+  background-color: var(--button-selected);
+  border-color: var(--button-color);
+}
